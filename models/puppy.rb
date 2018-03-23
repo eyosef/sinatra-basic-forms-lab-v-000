@@ -1,4 +1,4 @@
-class Puppy
+class Puppy < Sinatra::Base
 
   attr_accessor :name, :breed, :age
 
