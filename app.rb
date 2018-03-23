@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
 
 
-  post '/display' do
+  post '/' do
 
     @puppy = Puppy.new("#{params[:name]}", "#{params[:breed]}", "#{params[:age]}")
 
