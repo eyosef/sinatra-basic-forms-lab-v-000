@@ -17,6 +17,7 @@ class App < Sinatra::Base
 
     @puppy_info = ["Name: #{params[:name]}","Breed: #{params[:breed]}", "Age: #{params[:age]}"]
 
+    binding.pry
     erb :display_puppy
   end
 
