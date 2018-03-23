@@ -16,7 +16,7 @@ class App < Sinatra::Base
 
     @puppy = Puppy.new("#{params[:name]}", "#{params[:breed]}", "#{params[:age]}")
 
-    @puppy_info = ["Puppy Name: #{params[:name]}","Breed: #{params[:breed]}", "Age: #{params[:age]}"]
+    @puppy_info = ["Puppy Name: #{params[:name]}","Puppy Breed: #{params[:breed]}", "Puppy Age: #{params[:age]}"]
 
     erb :display_puppy
   end
