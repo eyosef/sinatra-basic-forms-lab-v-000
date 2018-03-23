@@ -13,9 +13,9 @@ class App < Sinatra::Base
 
   post '/display' do
 
-    name = "#{params[:name]}"
-    breed = "#{params[:breed]}"
-    age = "#{params[:age]}"
+    "#{params[:name]}"
+    "#{params[:breed]}"
+    "#{params[:age]}"
 
     @puppy = Puppy.new(name, breed, age)
 
