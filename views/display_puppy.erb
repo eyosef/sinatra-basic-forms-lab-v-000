@@ -5,7 +5,7 @@
 
 <body>
   <form method="POST" action="/display">
-    <p>Name: <%= @puppy.name %> <input type="text" name="name"></p>
+    <p>Name: <%= "#{params[:name]}" %> <input type="text" name="name"></p>
     <p>Breed: <%= @puppy.breed %> <input type="text" name="breed"></p>
     <p>Age: <%= @puppy.age %> <input type="text" name="age"></p>
     <input type="submit" name="submit" id="submit" value="submit">
